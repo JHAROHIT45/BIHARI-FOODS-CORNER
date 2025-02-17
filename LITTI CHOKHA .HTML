@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bihari Food Order</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      text-align: center;
+    }
+    header {
+      background-color: #8b0000;
+      color: white;
+      padding: 15px;
+      font-size: 24px;
+    }
+    .menu {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px;
+    }
+    .dish {
+      background: white;
+      margin: 15px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 250px;
+    }
+    .dish img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .order-form {
+      margin: 30px;
+    }
+    input, select, button {
+      padding: 10px;
+      margin: 10px;
+      width: 80%;
+      max-width: 400px;
+    }
+    button {
+      background-color: #8b0000;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>Bihari Food Order</header>
+  
+  <div class="menu">
+    <div class="dish">
+      <img src="https://i.pinimg.com/originals/94/cf/61/94cf6111ee7086249c211b90365e9e9e.jpg" alt="Litti Chokha">
+      <h3>Litti Chokha</h3>
+      <p>Traditional Bihari dish made of wheat flour and sattu.</p>
+    </div>
+    <div class="dish">
+      <img width="600px" src="https://th.bing.com/th/id/OIP.VevTFzS_s9SaDCGPwf-CzwHaEK?w=278&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Thekua">
+      <h3>Thekua</h3>
+      <p>Sweet snack made of wheat flour and jaggery.</p>
+    </div>
+    <div class="dish">
+      <img src="https://th.bing.com/th/id/OIP.AVJisRWe3j-LerxjALwBMAHaEK?w=333&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Chana Ghugni">
+      <h3>Chana Ghugni</h3>
+      <p>Spicy chickpea curry, a famous street food.</p>
+    </div>
+  </div>
+  
+  <div class="order-form">
+    <h2>Place Your Order</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="text" placeholder="Your Address" required><br>
+      <select required>
+        <option value="">Select a Dish</option>
+        <option value="Litti Chokha">Litti Chokha</option>
+        <option value="Thekua">Thekua</option>
+        <option value="Chana Ghugni">Chana Ghugni</option>
+      </select><br>
+      <button type="submit">Order Now</button>
+    </form>
+  </div>
+</body>
+</html>
